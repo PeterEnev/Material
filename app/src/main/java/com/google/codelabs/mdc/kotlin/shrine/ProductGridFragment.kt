@@ -28,6 +28,7 @@ class ProductGridFragment : Fragment() {
         //Set up the RecyclerView
         view.recycler_view.setHasFixedSize(true)
         view.recycler_view.layoutManager = GridLayoutManager(context, 2, RecyclerView.VERTICAL, false)
+
         val adapter = ProductCardRecyclerViewAdapter(ProductEntry.initProductEntryList(resources))
         view.recycler_view.adapter = adapter
         val largePadding = resources.getDimensionPixelSize(R.dimen.shr_product_grid_spacing)
